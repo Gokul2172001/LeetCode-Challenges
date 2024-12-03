@@ -3,11 +3,11 @@ public class practice {
 	public static void main(String[] args) {
 
 		Solution s1 = new Solution();
-		int divid = 2147483647;
-		int divic = 1;
+//		int divid = 2147483647;
+//		int divic = 1;
 		// => 2147483647
-//		int divid = 10;
-//		int divic = 3;
+		int divid = 10;
+		int divic = 3;
 		System.out.println(s1.divide(divid, divic));
 	}
 
@@ -31,9 +31,21 @@ class Solution {
 		while (absdivident >= absdivisor) {
 			long temp = absdivisor, multiple = 1;
 			while (absdivident >= (temp << 1)) {
-				temp <<=1;
-				
+				temp <<= 1;
+				multiple <<= 1;
 			}
+			absdivisor -= temp;
+			quot += multiple;
+		}
+		if (sign) {
+			quot = -quot;
+		}
+
+		if (quot < Integer.MIN_VALUE) {
+			return Integer.MIN_VALUE;
+		}
+		if (quot > Integer.MAX_VALUE) {
+			return Integer.MAX_VALUE;
 		}
 
 		return divide;
