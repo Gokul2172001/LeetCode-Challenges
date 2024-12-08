@@ -1,1 +1,1 @@
-# LeetCode30DaysChallange
+# LeetCode Solutions
