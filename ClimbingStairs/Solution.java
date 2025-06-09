@@ -5,6 +5,7 @@ class Solution {
         if(n==1) {
         return 1;
     }
+        
         int firstVal =1;
         int secondVal =1; 
 
