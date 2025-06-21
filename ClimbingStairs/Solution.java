@@ -10,9 +10,11 @@ class Solution {
         int secondVal =1; 
 
         for(int i=2; i<=n; i++) {
+     
             int temp=firstVal+secondVal;
             firstVal =secondVal;
             secondVal =temp;   
+        
         }
         
         return secondVal;
