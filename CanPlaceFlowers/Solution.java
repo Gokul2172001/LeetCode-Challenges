@@ -1,10 +1,8 @@
-
 class Solution {
 
 	public boolean canPlaceFlowers(int[] flowerbed, int n) {
     
 	if (n == 0) 
-
 		return true;
         
         int count = 0;
@@ -21,7 +19,6 @@ class Solution {
 		    
                  }
         }
-        
         return false;
     }
 	
