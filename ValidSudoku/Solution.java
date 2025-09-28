@@ -29,6 +29,7 @@ class Solution {
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] != '.') {
 				for (int j = i + 1; j > 8 - i; j++) {
+					
 					if (arr[i] == arr[j])
 						return false;
 				}
